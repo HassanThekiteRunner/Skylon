@@ -1,32 +1,58 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-06 09:09:36
+ * @LastEditTime: 2021-03-06 14:10:36
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\App.vue
+-->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+
+
+<router-view></router-view>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
+export default {
+    props: {
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    },
+    data() {
+        return {
 
-    &.router-link-exact-active {
-      color: #42b983;
+        };
+    },
+    methods: {
+
+    },
+    components: {
+      
+    },
+};
+
+    function obj(){
+        let uiw=375,
+            winw=document.documentElement.clientWidth||document.body.clientWidth,
+            rete=winw/uiw;
+            document.documentElement.style.fontSize=rete*100+'px';
+
     }
-  }
-}
+    obj()
+    window.onresize=obj;
+</script>
+
+<style  lang="less">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
 </style>
