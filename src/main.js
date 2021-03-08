@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-06 09:09:36
- * @LastEditTime: 2021-03-06 14:28:16
+ * @LastEditTime: 2021-03-08 16:52:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\main.js
@@ -25,6 +25,18 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 
 // import {shiying} from './http/yidong/yidong'
+
+
+
+//引入vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
+
+//引入转字符串
+import qs from 'qs'
+Vue.prototype.qs=qs;
+
 Vue.config.productionTip = false
 
 new Vue({
@@ -34,7 +46,8 @@ new Vue({
  mounted(){
   //  shiying.fun();
   //  document.documentElement.style.fontSize=.16+'rem'
-  this.$router.push('/Music')
+      this.$router.push('/Music/Recommend')
+  
  },
   
   render: h => h(App)

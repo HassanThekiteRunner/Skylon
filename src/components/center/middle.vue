@@ -1,42 +1,41 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-06 15:34:25
- * @LastEditTime: 2021-03-06 17:10:35
+ * @LastEditTime: 2021-03-06 22:18:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\components\center\middle.vue
 -->
 <template>
   <div id="middle">
-    <!-- <ul>
-      <li><router-link to="1"> 
+    <ul class="ul">
+      <li><router-link to="/Singer"> 
          <span><img src="../../assets/home/4@2x.png" alt=""></span>
          <span>歌手</span>
           </router-link>
           </li>
-          <li><router-link to="2"> 
+          <li><router-link to="/Album"> 
          <span><img src="../../assets/home/5@2x.png" alt=""></span>
          <span>专辑</span>
           </router-link>
           </li>
-          <li><router-link to="3"> 
+          <li><router-link to="/Ranking"> 
          <span><img src="../../assets/home/6@2x.png" alt=""></span>
          <span>排行</span>
           </router-link>
           </li>
-          <li><router-link to="4"> 
+          <li><router-link to="/Anchor"> 
          <span><img src="../../assets/home/7@2x.png" alt=""></span>
          <span>电台</span>
           </router-link>
           </li>
-          <li><router-link to="5"> 
+          <li><router-link to="/Song"> 
          <span><img src="../../assets/home/8@2x.png" alt=""></span>
          <span>歌单</span>
           </router-link>
           </li>
       
-    </ul> -->
-    <router-view></router-view>
+    </ul>
   </div>
 </template>
 
@@ -53,13 +52,16 @@ export default {
 
 <style scoped lang="less">
     #middle{
-        ul{
+      
+      padding-top: .15rem;
+      padding-bottom: .1rem;
+      border-bottom: 1px solid #ccc;
+        .ul{
             display: flex;
-            font-size: .2rem;
+            font-size: .14rem;
             li{
                width: 20%;
-               border: 1px solid; 
-             
+               
                a{
                      display: flex;
                justify-content: center;
@@ -68,6 +70,8 @@ export default {
                    img{
                        width: .5rem;
                        height: .5rem;
+                       background: #dbf8fe;
+                       opacity: .8;
                    }
                    span{
                        color: #000;
