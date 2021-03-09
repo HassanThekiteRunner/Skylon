@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-07 19:23:05
- * @LastEditTime: 2021-03-08 18:56:31
+ * @LastEditTime: 2021-03-09 09:26:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\components\login\register.vue
@@ -84,22 +84,13 @@ export default {
             this.pwd='密码格式不正确'
             return
         }
-           
-        // this.$store.state.phone=this.phone   
-        // this.$store.state.pwd=this.pwd   
-           // this.$router.push('/Login')
+
+          
+          //  this.$router.push('/Login')
       register({
-        // method:'post',
-        // url:'/users',
-       
-      data:{
-        // type:'register',
-        phone:this.$store.state.phone,
-        pass:this.$store.state.pwd
-      },
-     
-    }).then((res)=>{
-      console.log(res)
+        
+      }).then((res)=>{
+        console.log(res)
       
     })
         
