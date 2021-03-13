@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-06 09:20:27
- * @LastEditTime: 2021-03-07 14:34:13
+ * @LastEditTime: 2021-03-09 17:35:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\components\head\head.vue
@@ -11,7 +11,7 @@
     
 
     <ul>
-      <li><img class="img1" src="../../assets/home/1.png" alt="" /></li>
+      <li><img @click="img1" class="img1" src="../../assets/home/1.png" alt="" /></li>
       <li><router-link to="/Mine">我的</router-link></li>
       <li><router-link to="/Music">音乐馆</router-link></li>
       <li><router-link to="/Find">发现</router-link></li>
@@ -29,7 +29,12 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    img1(){
+      this.$router.push('/Register')
+    }
+
+  },
   mounted() {
     // obj().then((res) => {
     //   console.log(res.data);

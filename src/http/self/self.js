@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-06 09:21:17
- * @LastEditTime: 2021-03-08 21:44:20
+ * @LastEditTime: 2021-03-09 16:41:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\http\self.js
@@ -39,28 +39,12 @@ export function banner(){
     })
     
 }
-// export function register(){
-//     return http({
-//         method:'post',
-//         data:{
-//             type:'register',
-//             // phone:phone,
-//             // pass:pass
-//         },
-//         url:'/users'
-//     })
+export function register(){
+  
     
-// }
+}
 
 export function login(){
-    return http({
-        // method:'post',
-        // data:{
-        //     type:'login',
-        //     phone:phone,
-        //     pass:pass
-        // },
-        // url:'/users'
-    })
+  
     
 }

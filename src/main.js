@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-06 09:09:36
- * @LastEditTime: 2021-03-08 16:52:23
+ * @LastEditTime: 2021-03-09 15:06:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\main.js
@@ -23,7 +23,7 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
-
+axios.defaults.withCredentials = true
 // import {shiying} from './http/yidong/yidong'
 
 

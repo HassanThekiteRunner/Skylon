@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-06 11:52:46
- * @LastEditTime: 2021-03-07 19:24:16
+ * @LastEditTime: 2021-03-13 08:38:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \gshop-server_finale:\有关JS、vue的练习\vue练习\vue外卖项目练习\迷音\mussic\src\components\head\music.vue
@@ -58,26 +58,26 @@ export default {
     };
   },
   methods: {
-    bf(){
-     let music=document.getElementById('music')
-     if(music!==null){
-
-        // alert('请点击左上角前往注册')
-       this.$router.push('/Register')
-     }else{
-     music.play()
-      this.bofang=false
-      this.zanting=true
-     }
-     
-    },
-
     // bf(){
-    //   let music=document.getElementById('music')
-    //    music.play()
+    //  let music=document.getElementById('music')
+    //  if(music!==null){
+
+    //     // alert('请点击左上角前往注册')
+    //    this.$router.push('/Register')
+    //  }else{
+    //  music.play()
     //   this.bofang=false
     //   this.zanting=true
+    //  }
+     
     // },
+
+    bf(){
+      let music=document.getElementById('music')
+       music.play()
+      this.bofang=false
+      this.zanting=true
+    },
     zt(){
      let music=document.getElementById('music')
      music.pause()
